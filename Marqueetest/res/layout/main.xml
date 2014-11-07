@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- singleLine="true":单行显示 scrollHorizontally="true"：水平滚动 marqueeRepeatLimit="marquee_forever":重复次数 
+		，可设置整型值 ellipsize="marquee"：滚动 -->
+	<!--<com.zhou.activity.ScrollForeverTextView android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:singleLine="true" android:ellipsize="marquee" 
+		android:focusable="true" android:marqueeRepeatLimit="marquee_forever" android:focusableInTouchMode="true" 
+		android:scrollHorizontally="true" android:textSize="18dip" android:textColor="@android:color/white" 
+		android:text="开放平台成网络淘金下一站 从圈地到吸纳盟友,除腾讯外，百度、盛大、京东商城等互联网行业标杆目前都已推出了各自的开放平台。" 
+		/> -->
+
+	<com.zhou.activity.MarqueeTextView
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/marquee"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:textSize="18dip"
+		android:text="@string/goo"
+		android:textColor="@android:color/white"></com.zhou.activity.MarqueeTextView>
+	<!-- android:clickable="true" -->
+	<Button
+		android:layout_width="60dip"
+		android:layout_height="60dip"
+		android:text="fafa" />
+
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="200dip" />
+</LinearLayout>
